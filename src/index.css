@@ -77,9 +77,22 @@ img {
   border-radius: 10px;
 }
 
-#likes {
+.likes {
   text-align: right;
   width: 70%;
   padding: 10px;
   font-size: 1rem;
+}
+
+.comment-card {
+  background-color: rgb(171, 223, 194);
+  font-size: medium;
+  width: 70%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: justify;
+  color: rgb(31, 9, 73);
 }

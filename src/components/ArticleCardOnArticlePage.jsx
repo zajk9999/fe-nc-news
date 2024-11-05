@@ -24,7 +24,7 @@ export default function ArticleCardOnArticlePage() {
         <h1 id="title">{article.title}</h1>
         <img src={article.article_img_url} />
         <p id="article-body">{article.body}</p>
-        <p id="likes">likes: {article.votes}</p>
+        <p className="likes">Likes: {article.votes}</p>
       </>
     );
   }
