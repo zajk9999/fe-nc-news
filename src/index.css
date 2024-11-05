@@ -20,3 +20,26 @@ body {
   margin-top: 20px;
   border-radius: 10px;
 }
+
+#articles-list {
+  width: 70%;
+  margin: auto;
+}
+
+.article-card {
+  background-color: rgb(204, 218, 19);
+  font-size: small;
+  width: 70%;
+  height: auto;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(31, 9, 73);
+}
+
+#likes-and-comments {
+  text-align: right;
+  padding: 10px;
+}
