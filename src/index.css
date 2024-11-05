@@ -43,3 +43,43 @@ body {
   text-align: right;
   padding: 10px;
 }
+
+img {
+  width: 20rem;
+  height: 15rem;
+}
+
+#title {
+  background-color: rgb(184, 64, 16);
+  color: rgb(22, 6, 1);
+  font-style: oblique;
+  font-size: 3rem;
+  padding: 10px 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#article-body {
+  background-color: rgb(248, 245, 220);
+  color: rgb(22, 6, 1);
+  font-style: oblique;
+  font-size: 2rem;
+  text-align: justify;
+  text-indent: 1cm;
+  padding: 10px 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#likes {
+  text-align: right;
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+}
