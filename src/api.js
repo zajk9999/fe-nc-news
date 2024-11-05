@@ -15,3 +15,11 @@ export function getArticleById(article_id) {
     return article;
   });
 }
+
+export function getCommentsByArticleId(article_id) {
+  return api
+    .get(`/articles/${article_id}/comments`)
+    .then(({ data: { comments } }) => {
+      return comments;
+    });
+}
