@@ -1,68 +1,45 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: rgb(234, 247, 244);
+  background-position: 0dvh;
+  text-align: center;
+  margin: 0 auto;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.header {
+  background-color: rgb(156, 184, 16);
+  color: rgb(1, 10, 92);
+  font-style: oblique;
+  font-size: 7rem;
+  padding: 10px 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+#articles-list {
+  width: 70%;
+  margin: auto;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+.article-card {
+  background-color: rgb(204, 218, 19);
+  font-size: small;
+  width: 70%;
+  height: auto;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(31, 9, 73);
+}
+
+#likes-and-comments {
+  text-align: right;
+  padding: 10px;
+}
