@@ -34,8 +34,7 @@ export default function LikeButton({ article_id }) {
     return (
       <>
         <button id="like-button" onClick={handleLike}>
-          Click me if you liked it!
-          {error ? <p>{error}</p> : null}
+          {error ? <p>{error}</p> : <p>Click me if you liked it!</p>}
         </button>
         <p>Likes: {likes}</p>
       </>
