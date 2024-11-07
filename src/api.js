@@ -44,3 +44,12 @@ export function patchLikesByArticleId(article_id, likes) {
       return article;
     });
 }
+
+export function postCommentByArticleId(article_id, user, comment) {
+  const commentToPost = { username: user, body: comment };
+  return api
+    .post(`/articles/${article_id}/comments`, commentToPost)
+    .then(({ data: { comment } }) => {
+      return comment;
+    });
+}
