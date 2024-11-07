@@ -3,6 +3,7 @@ import Loading from "./Loading";
 import { useParams } from "react-router-dom";
 import { getCommentsByArticleId } from "../api";
 import CommentCard from "./CommentCard";
+import CommentAdder from "./CommentAdder";
 
 export default function CommentsList() {
   const { article_id } = useParams();
@@ -14,13 +15,14 @@ export default function CommentsList() {
       setComments(comments);
       setIsLoading(false);
     });
-  }, []);
+  });
 
   if (isLoading) {
     return <Loading />;
   } else {
     return (
       <>
+        <CommentAdder />
         <h1>Comments</h1>
         <ol>
           {comments.map((comment) => {
