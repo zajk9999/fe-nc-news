@@ -27,7 +27,7 @@ export default function CommentAdder() {
                 setIsPosting(false);
                 setError("Something went wrong, please try again");
               });
-          } else setError("Please write your comment below befoe submitting");
+          } else setError("Please write your comment below before submitting");
         }}
       >
         <h3>
