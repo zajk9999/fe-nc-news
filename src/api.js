@@ -53,3 +53,9 @@ export function postCommentByArticleId(article_id, user, comment) {
       return comment;
     });
 }
+
+export function deleteCommentById(comment_id) {
+  return api.delete(`/comments/${comment_id}`).then(({ status }) => {
+    return status;
+  });
+}
