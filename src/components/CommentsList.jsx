@@ -13,7 +13,6 @@ export default function CommentsList() {
 
   const handleUpdate = () => {
     setRerenderCommentsList((current) => !current);
-    console.log(rerenderCommentsList);
   };
 
   useEffect(() => {
