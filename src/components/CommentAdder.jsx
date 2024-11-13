@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useContext, useState } from "react";
 import userContext from "../contexts/userContext";
 
-export default function CommentAdder() {
+export default function CommentAdder({ onUpdate }) {
   const { user } = useContext(userContext);
   const { article_id } = useParams();
   const [isPosting, setIsPosting] = useState(false);
@@ -22,6 +22,7 @@ export default function CommentAdder() {
                 event.target[0].value = "";
                 setError(null);
                 setIsPosting(false);
+                onUpdate();
               })
               .catch((err) => {
                 setIsPosting(false);

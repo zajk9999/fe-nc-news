@@ -2,9 +2,9 @@ import { useContext } from "react";
 import userContext from "../contexts/userContext";
 import DeleteButton from "./DeleteButton";
 
-export default function CommentCard(props) {
+export default function CommentCard({ comment, onUpdate }) {
   const { user } = useContext(userContext);
-  const { comment } = props;
+
   return (
     <div className="comment-card">
       <h3>{comment.body}</h3>
@@ -14,6 +14,7 @@ export default function CommentCard(props) {
         <DeleteButton
           key={comment.comment_id}
           comment_id={comment.comment_id}
+          onUpdate={onUpdate}
         />
       ) : null}
     </div>

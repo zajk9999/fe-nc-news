@@ -9,24 +9,36 @@ export default function CommentsList() {
   const { article_id } = useParams();
   const [comments, setComments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [rerenderCommentsList, setRerenderCommentsList] = useState(false);
+
+  const handleUpdate = () => {
+    setRerenderCommentsList((current) => !current);
+    console.log(rerenderCommentsList);
+  };
 
   useEffect(() => {
     getCommentsByArticleId(article_id).then((comments) => {
       setComments(comments);
       setIsLoading(false);
     });
-  });
+  }, [rerenderCommentsList]);
 
   if (isLoading) {
     return <Loading />;
   } else {
     return (
       <>
-        <CommentAdder />
+        <CommentAdder onUpdate={handleUpdate} />
         <h1>Comments</h1>
         <ol>
           {comments.map((comment) => {
-            return <CommentCard key={comment.comment_id} comment={comment} />;
+            return (
+              <CommentCard
+                key={comment.comment_id}
+                comment={comment}
+                onUpdate={handleUpdate}
+              />
+            );
           })}
         </ol>
       </>
